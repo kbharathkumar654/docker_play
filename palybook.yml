@@ -16,3 +16,4 @@
      docker_image:
       name: "bharath654/ansible:latest"
       push: yes
+      
