@@ -15,6 +15,4 @@
    - name: push into dockerhubb
      docker_image:
       name: "bharath654/ansible:latest"
-      path: /opt/docker
-      source: build
       push: yes
