@@ -13,4 +13,6 @@
       repository: "bharath654/ansible:latest"
 
    - name: push into dockerhubb
-     command: docker push bharath654/ansible:latest
+     docker_image:
+      name: "bharath654/ansible:latest"
+      push: yes
