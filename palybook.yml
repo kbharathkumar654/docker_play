@@ -3,7 +3,7 @@
 - hosts: all
   tasks: 
    - name: create a docker image
-     command: docker build -t tomcat
+     command: docker build -t tomcat .
      args:
       chdir: /opt/docker
 
