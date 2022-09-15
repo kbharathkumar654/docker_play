@@ -12,11 +12,15 @@
      docker_image:
       name: "tomcat:latest"
       repository: "bharath654/ansible:latest"
+      args:
+       chdir: /opt/docker
      
    - name: push the image to docker hub
      docker_image: 
       name: "bharath654/ansible:latest
       push: yes
+      args:
+       chdir: /opt/docker
      
 
      
