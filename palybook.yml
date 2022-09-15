@@ -1,0 +1,14 @@
+
+
+-hosts: all
+ tasks: 
+  - name: create a docker image
+    command: docker build -t tomcat
+    args:
+      chdir: /opt/docker
+
+  - name: create a tag for image
+    command: docker tag tomcat bharth654/devops:latest
+
+  - name: push into dockerhubb
+    command: docker push bharath654/devops 
