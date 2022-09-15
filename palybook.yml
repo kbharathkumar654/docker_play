@@ -11,4 +11,4 @@
      command: docker tag tomcat bharth654/devops:latest
 
    - name: push into dockerhubb
-     command: docker push bharath654/devops:latest 
+     command: docker push bharath654/devops
