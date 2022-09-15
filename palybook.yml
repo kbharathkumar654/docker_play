@@ -2,14 +2,13 @@
 
 - hosts: all
   tasks:
-  become: true
+ 
    - name: create a docker image
      command: docker build -t tomcat .
      args:
       chdir: /opt/docker
       
-   - name: create a tagname for image
-     command: docker tag tomcat bharath654/ansible:latest
+   
      
    - name: push the image to docker hub
      command: docker push bharath654/ansible
