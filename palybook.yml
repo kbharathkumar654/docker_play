@@ -8,14 +8,10 @@
       chdir: /opt/docker
       
    - name: create a tagname for image
-     docker_image:
-      name: "tomcat:latest"
-      repository: "bharath654/ansible:latest"
+     command: docker tag tomcat bharath654/ansible:latest
      
    - name: push the image to docker hub
-     docker_image: 
-      name: "bharath654/ansible:latest
-      push: yes
+     docker: docker push bharath654/ansible
  
      
 
