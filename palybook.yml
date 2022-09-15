@@ -8,7 +8,7 @@
       chdir: /opt/docker
 
    - name: create a tag for image
-     command: docker tag tomcat bharth654/devops:latest
+     command: docker tag tomcat:latest bharth654/ansible:latest
 
    - name: push into dockerhubb
-     command: docker push bharath654/devops
+     command: docker push bharath654/ansible:latest
