@@ -1,8 +1,7 @@
 
 
 - hosts: all
-  tasks: 
-  become: true
+  tasks:
    - name: create a docker image
      command: docker build -t tomcat .
      args:
