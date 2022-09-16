@@ -10,9 +10,7 @@
       
    
      
-   - name: push the image to docker hub
-     command: docker push bharath654/ansible
- 
+   
      
 
      
